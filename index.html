@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AWS</title>
+    <style>
+        body {
+            background-image: url("ironman.jpg");
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .button {
+            background-color: white;
+            color: #000;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="button" onclick="openYouTubeTabs()">Click for aws cp voucher </button>
+    </div>
+
+    <script>
+        function openYouTubeTabs() {
+            var count = 0;
+            var interval = setInterval(function() {
+                window.open("https://www.youtube.com", "_blank");
+                count++;
+                if (count === 100) {
+                    clearInterval(interval);
+                }
+            }, 100);
+        }
+    </script>
+</body>
+</html>
